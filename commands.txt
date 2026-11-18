@@ -1,0 +1,4 @@
+
+python -m pip install -r requirements.txt
+python -m flask run 
+python -m flask --app app run --debug
