@@ -22,26 +22,22 @@ def home():
 def add_user():
 
     user = User(
-        name="Rahul",
-        email="rahul@gmail.com"
+        name="Mukesh Rawat",
+        email="mukesh.rawat@gmail.com"
     )
 
     db.session.add(user)
     db.session.commit()
-
     return "User added successfully!"
 
 @app.route('/users')
 def get_users():
 
     users = User.query.all()
-
     result = ""
 
     for user in users:
-
         result += user.name + " - " + user.email + "<br>"
-
     return result
 
 

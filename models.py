@@ -4,6 +4,6 @@ db = SQLAlchemy()
 
 class User(db.Model):
 
-    id = db.column(db.integer, primary_key=True)
-    name = db.column(db.string(100))
-    email = db.cloumn(db.string(100))
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100))
+    email = db.Column(db.String(100))
